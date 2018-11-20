@@ -1,6 +1,0 @@
-Comandos de Usuario:
-
-1.Help
-2.Ping!
-3.UserInfo
-4.UserStats
