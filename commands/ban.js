@@ -18,11 +18,11 @@ module.exports.run = async (bot, message, args) => {
     let banEmbed = new Discord.RichEmbed()
     .setDescription("~Ban~")
     .setColor("#bc0000")
-    .addField("El usuario: ", `${bUser} con la ID ${bUser.id} fue baneado.`)
-    .addField("Baneado por: ", `<@${message.author.id}> con la ID ${message.author.id}`)
-    .addField("Baneado en: ", message.channel)
-    .addField("Hora: ", message.createdAt)
-    .addField("Razon: ", bReason);
+    .addField("Se baneo al usuario", `${bUser} con la ID ${bUser.id}`)
+    .addField("Baneado por", `<@${message.author.id}> con la ID ${message.author.id}`)
+    .addField("Baneado en", message.channel)
+    .addField("Hora:", message.createdAt)
+    .addField("Razon:", bReason);
 
     let incidentchannel = message.guild.channels.find(`name`, "incidents");
     if(!incidentchannel) return message.channel.send("Can't find incidents channel.");
